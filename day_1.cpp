@@ -18,5 +18,19 @@ int main() {
         cout<<n<<" is not a prime number";
     }
 
+
+
+
+
+    int n,i=1,sum=0;
+    cout<<"enter a number: ";
+    cin>>n;
+    for(i=1;i<=n;i++){
+        if(i%3==0){
+            sum=sum+i;
+        }
+
+    }
+    cout<<"sum of numbers which are divisible by 3 from 1 to "<<n<<" is: "<<sum;
     return 0;
 }
