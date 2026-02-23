@@ -1,18 +1,20 @@
 #include <iostream>
 using namespace std;
 int main() {
-    int n,sumOdd=0,sumEven=0;
-    cout<<"enter a num: ";
+    int n,i,count=0;
+    cout<<"enter a number: ";
     cin>>n;
-    for(int i=1;i<=n;i++){
-    if(i%2!=0){
-        sumOdd+=i;
+    for (i=2;i<n;i++){
+        if(n%i==0){
+            count+=1;
+        }
+        }  
+    if(count==0){
+        cout<<n<<" is a prime number";
+    }
+    else{
+        cout<<n<<" is not a prime number";
+    }
 
-    }
-    else 
-        sumEven+=i;
-    }
-    cout<<"sum of odd numbers: "<<sumOdd<<endl;
-    cout<<"sum of even numbers: "<<sumEven<<endl;
     return 0;
 }
